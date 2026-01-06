@@ -110,7 +110,6 @@ if condition:
         code
 else:
     code
-"""
 
 # Age + id check
 age =int(input("enter age: "))
@@ -123,6 +122,9 @@ if age >= 18:
         print("entry not allowed")
 else:
     print("Under age")
+    
+"""
+
 
 
 
