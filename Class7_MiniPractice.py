@@ -1,3 +1,5 @@
+# mini practice
+
 # Even / Odd
 # num = float(input("Enter number: "))
 # if num % 2 == 0:
