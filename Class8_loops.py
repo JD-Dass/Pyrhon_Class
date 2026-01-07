@@ -147,7 +147,7 @@ while i <= 5:
     print(i)
 
 # reverse number using while
-num = 123
+num = 24343
 rev = 0
 
 while num > 0:
@@ -158,4 +158,47 @@ while num > 0:
 print(rev)
 
 # while loop is used when the number of iteration is not known in advance and depends on a condition
+
+# Input number use panni reverse pannu
+num = int(input("Enter number: "))
+rev = 0
+
+while num > 0 :
+    digit = num % 10
+    rev = rev * 10 + digit 
+    num //= 10
+
+print(rev)
+
+# polindrom check
+num = int(input("Enter number: "))
+original = num
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+print(f"Reversed number: {rev}")
+
+if original == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# negative revers
+num = int(input("Enter number: "))
+is_nagative = False
+if num < 0:
+    is_nagative = True
+    num = -num
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+if is_nagative:
+    rev = -rev
+
+print(rev)
+
 """
