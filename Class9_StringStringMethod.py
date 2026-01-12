@@ -1,5 +1,7 @@
-# String and String Method
 """
+# String and String Method
+
+
 string means letters , words, sentence and all text format to store in data type.
 strings between quotes in python
 # single quote ' '
@@ -151,20 +153,4 @@ alnum = text.isalnum()
 print(alnum)
 
 
-
-
-
-
-
-
 """
-
-
-
-
-
-
-
-
-
-
