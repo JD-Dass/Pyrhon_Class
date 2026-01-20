@@ -114,4 +114,81 @@ commonly used functions is random module
 6. shuffle() => shuffle list
 7. sample() => random unique elements
 
+# random() - Random Float (0.0 to 1.0)
+import random
+print(random.random())
+# randint() - Random Integer (inclusive)
+print(random.randint(1, 10))
+# randrange() - Random Number in Range
+print(random.randrange(1, 10, 3))
+# choice() - Random Element from Sequence
+name = ["esudass", "ganesh", "rame", "some"]
+print(random.choice(name))
+# choices() - Multiple Random Elements
+print(random.choices(name, k = 2))
+# shuffle() - Shuffle List
+nums = [1, 2, 3, 4, 5, 6,7 ]
+random.shuffle(nums)
+print(nums)
+# sample() - Random Unique Elements
+print(random.sample(nums, 3))
+
+
+# datetime Module
+date time module is a bilt in python module used to work with data and time
+it helps you get the corrent date, time , perform date calculation, compare date and format date/time
+# no installation needed just import datetime
+
+# how to import date time?
+import datetime
+
+# main classes in date time module
+=> date => only date(year-month-day)
+=> time => only time(hours, min, sec)
+=> datetime => date + time
+=> timedelta => difference between dates/times
+
+# mommonly used operators
+# get current date and time
+import datetime
+now = datetime.datetime.now()
+print(now)
+# get only date
+today = datetime.date.today()
+print(today)
+# get only time
+current_time = datetime.datetime.now().time()
+print(current_time)
+# create custom date
+d = datetime.date(2025, 1, 25)
+print(d)
+# create custom date and time
+dt = datetime.datetime(2025, 1, 25, 10, 30, 59)
+print(dt)
+# date arithmetic (timedate)
+cd = datetime.date.today()
+future_date = cd + datetime.timedelta(hours=300)
+print(future_date)
+# difference between tow dates
+d1 = datetime.date(1992,2,23)
+d2 = datetime.date.today()
+diff = d2 -d1
+print(diff.days)
+# formate date and time (strftime)
+now1 = datetime.datetime.now()
+print(now1.strftime("%d-%m-%Y"))
+print(now1.strftime("%H:%M:%S"))
+
+
+# time Module
+the time module is a built in python module used to work with time related operations
+it helps in pausing program execution, measuring execution time, and working with timestamps
+# no installation needed just import time
+
+# how to import time
+import time
+
+# commonly used functions in time module
+
 """
+
