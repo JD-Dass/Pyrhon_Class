@@ -188,7 +188,34 @@ it helps in pausing program execution, measuring execution time, and working wit
 # how to import time
 import time
 
-# commonly used functions in time module
+# commonly used functions in time module    
+
 
 """
 
+
+# time() - current timestamp
+# return the number of seconds since 1 jan 1970 (Epoch time)
+import time
+print(time.time())
+# sleep()- delay execution
+# pauses the program for hiven seconds.
+time.sleep(2)
+print("printed after 2 seconds")
+# ctime() - readable date and tiime
+# convert timestamp to human readable format
+print(time.ctime())
+# localtime() - local time structure
+t = time.localtime()
+print(t)
+print(t.tm_year)
+print(t.tm_mon)
+# strftime() - formate time  
+print(time.strftime("%d-%m-%Y %H:%M:%S", t))
+# import time
+# perf_counter()
+start = time.perf_counter()
+for i in range(1000000):
+    pass
+end = time.perf_counter()
+print(end - start)
