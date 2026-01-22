@@ -191,9 +191,6 @@ import time
 # commonly used functions in time module    
 
 
-"""
-
-
 # time() - current timestamp
 # return the number of seconds since 1 jan 1970 (Epoch time)
 import time
@@ -219,3 +216,5 @@ for i in range(1000000):
     pass
 end = time.perf_counter()
 print(end - start)
+
+"""
