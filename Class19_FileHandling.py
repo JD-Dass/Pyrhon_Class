@@ -134,9 +134,4 @@ with open("data.txt", "r+") as file:
 # Cursor starts at beginning
 # Writing happens after reading
 
-
-
 """
-
-
-
